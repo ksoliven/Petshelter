@@ -1,0 +1,16 @@
+
+<input type="search" name="q" [(ngModel)]="q" (ngModelChange)="s($event)" />
+<div *ngFor="let pet of filter">
+    <br>
+    <img src="{{pet.img}}" alt="pet" width="250px" />
+    <br>
+    <p>Name: {{pet.name}}</p>
+    <p>Type: {{pet.type}}</p>
+    <br>
+    <button type="button" class="solid" [routerLink]="['pets', pet._id]">Details</button>&nbsp;&nbsp;
+    <button type="button" class="solid" [routerLink]="['edit', pet._id]">Edit</button>&nbsp;&nbsp;
+    <button type="button" class="solid" (click)="deleteOnClick(pet._id)">Adopt</button>
+    <br>
+    <br>
+    <hr class="style13">
+</div>

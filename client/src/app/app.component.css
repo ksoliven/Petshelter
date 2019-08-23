@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Animal Insting";
+}
+button.solid {
+    background: #222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: grabbing;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    
+}
+button.solid:hover {
+    background: #ba2843;
+    letter-spacing: 3px;
+
+    }
+button.solid:active {
+    background-color: #7c1d2f;
+}

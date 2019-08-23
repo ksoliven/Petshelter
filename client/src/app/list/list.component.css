@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+}
+hr.style13 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+p{
+    font-family: "Animal Insting";
+}
+
+img{
+    border: 2px solid black;
+}
+
+button.solid {
+    background: #222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: grabbing;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    
+}
+button.solid:hover {
+    background: #ba2843;
+    letter-spacing: 3px;
+
+    }
+button.solid:active {
+    background-color: #7c1d2f;
+}
+
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}

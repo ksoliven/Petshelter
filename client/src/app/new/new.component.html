@@ -1,0 +1,43 @@
+<form (submit)="addPet()">
+    <br>
+    <p>Picture:
+        <input name="pet.img" [(ngModel)]="pet.img" type="text" />&nbsp;
+        <span *ngIf="errors.img">{{ errors.img.message }}</span>
+    </p>
+    <br>
+    <p>Name:
+        <input name="pet.name"  [(ngModel)]="pet.name" type="text"/>&nbsp;
+        <span *ngIf="errors.name">{{ errors.name.message }}</span>
+    </p>
+    <br>
+    <p>Type: 
+        <input name="pet.type" [(ngModel)]="pet.type" type="text"/>&nbsp;
+        <span *ngIf="errors.type">{{ errors.type.message }}</span>
+    </p>
+    <br>
+    <p>Description:
+    <input name="pet.description" [(ngModel)]="pet.description" type="text"/>&nbsp;
+    <span *ngIf="errors.description">{{ errors.description.message }}</span>
+    </p>
+    <br>
+    <h4>Skills(optional)</h4>
+    <br>
+    <p>Skill 1:
+        <input name="pet.skill_1" [(ngModel)]="pet.skill_1" type="text" />&nbsp;
+        <span *ngIf="errors.skill_1">{{ errors.skill_1.message }}</span>
+    <br>
+    <br>
+    <p>Skill 2:
+        <input name="pet.skill_2" [(ngModel)]="pet.skill_2" type="text" />&nbsp;
+        <span *ngIf="errors.skill_2">{{ errors.skill_2.message }}</span>
+    <br>
+    <br>
+    <p>Skill 3:
+        <input name="pet.skill_3" [(ngModel)]="pet.skill_3" type="text" />&nbsp;
+        <span *ngIf="errors.skill_3">{{ errors.skill_3.message }}</span>
+    </p>
+    <br>
+    <button type="submit" class="solid">Add Pet</button>
+    <button type="submit" class="solid" [routerLink]="[ '/' ]">Cancel</button>
+</form>
+
